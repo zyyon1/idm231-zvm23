@@ -1,10 +1,112 @@
-* {
-    box-sizing: border-box;
+/* @font-face {
+    font-family: 'Chubbo-Bold';
+    src: url('fonts/Chubbo-Bold.woff2') format('woff2'),
+         url('fonts/Chubbo-Bold.woff') format('woff'),
+         url('fonts/Chubbo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Supreme-Regular';
+    src: url('fonts/Supreme-Regular.woff2') format('woff2'),
+         url('fonts/Supreme-Regular.woff') format('woff'),
+         url('fonts/Supreme-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 }
 
-.title {
-    background-color: grey;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+h1 {
+    font-family: 'Supreme-Regular';
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
+    font-family: 'Supreme-Regular';
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: red;
     display: flex;
     justify-content: center;
-    margin: 0;
+    align-items: center;
+    height: 6rem;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.buttons button img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem; /* Increased vertical padding */
+    margin-top: auto;
+    width: 100%;
+    height: 6rem;
+    gap: 0.75rem; /* Adds consistent spacing between flex items */
+}
+
+footer h1 {
+    font-family: 'Supreme-Regular';
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.disclaimer {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: normal;
+    max-width: 600px;
 }

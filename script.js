@@ -5,7 +5,6 @@
  * @param {number} day - day of the month (1-31)
  * @returns {string} the corresponding Zodiac sign
  */
-
 function getZodiac(month, day) {
     if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
       return 'Capricorn';
