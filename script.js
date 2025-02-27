@@ -33,3 +33,74 @@ function getZodiac(month, day) {
     } else return null;
   }
 
+const signs = [
+  {
+    name: 'Aries',
+    image: 'images/ram.jpg',
+    sound: 'sounds/fire.mp3'
+  },
+  {
+    name: 'Taurus',
+    image: 'images/bull.jpg',
+    sound: 'sounds/earth.mp3'
+  },
+  {
+    name: 'Gemini',
+    image: 'images/twins.jpg',
+    sound: 'sounds/sparkle.mp3'
+  },
+  {
+    name: 'Cancer',
+    image: 'images/crab.jpg',
+    sound: 'sounds/water.mp3'
+  },
+  {
+    name: 'Leo',
+    image: 'images/lion.jpg',
+    sound: 'sounds/roar.mp3'
+  },
+  {
+    name: 'Virgo',
+    image: 'images/maiden.jpg',
+    sound: 'sounds/wind.mp3'
+  },
+  {
+    name: 'Libra',
+    image: 'images/scales.jpg',
+    sound: 'sounds/balance.mp3'
+  },
+  {
+    name: 'Scorpio',
+    image: 'images/scorpion.jpg',
+    sound: 'sounds/mystery.mp3'
+  },
+  {
+    name: 'Sagittarius',
+    image: 'images/archer.jpg',
+    sound: 'sounds/arrow.mp3'
+  },
+  {
+    name: 'Capricorn',
+    image: 'images/goat.jpg',
+    sound: 'sounds/mountain.mp3'
+  },
+  {
+    name: 'Aquarius',
+    image: 'images/water-bearer.jpg',
+    sound: 'sounds/bubble.mp3'
+  },
+  {
+    name: 'Pisces',
+    image: 'images/fish.jpg',
+    sound: 'sounds/ocean.mp3'
+  }
+];
+
+//  const birthday;
+//  const birthday_month;
+// const birthday_day;
+// let selected_sign = ;
+
+function play_sound(selected_sign){
+
+}
